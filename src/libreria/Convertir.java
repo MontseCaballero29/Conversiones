@@ -6,10 +6,9 @@ package libreria;
 
 /**
  *
- * @author Montse Caballero
+ * @author Montse Caballero y Suyay Castañón
  */
 public class Convertir {
-    
     private static double constanteKilogramos = Math.pow(10,3);
     private static double constanteKilogramosLibras = 0.453592; 
     private static double constanteOnzas = 28.3495; 
@@ -27,80 +26,89 @@ public class Convertir {
     private static double Pascalbar = 100000; 
     private static double MHzHz = 1000000; 
     private static double grados = 180/Math.PI; 
-    
-    public static void main(String[] args) {
+    /**
+     * @param args the command line arguments
+     */
+    public final static void main(String[] args) {
         // TODO code application logic here
     }
-    public static double ToneladasKilogramos (double num){
+    public final static double ToneladasKilogramos (double num){
       double res = num * constanteKilogramos; 
       return res; 
     }
-    public static double LibrasKilogramos (double num){
+    public final static double LibrasKilogramos (double num){
         double res = num * constanteKilogramosLibras; 
         return res; 
     }
-    public static double OnzasGramos ( double num){
+    public final static double OnzasGramos ( double num){
         double res = num * constanteOnzas;  
         return res; 
     }
-    public static double MinutosSegundos (double tiempo){
+    public final static double MinutosSegundos (double tiempo){
         double res = tiempo * constanteSegundosM;  
         return res; 
     }
-    public static double HorasSegundos (double tiempo){
+    public final static double HorasSegundos (double tiempo){
         double res = tiempo * constanteSegundosH;   
         return res; 
     }
-    public static double DiaSegundos (double tiempo){
+    public final static double DiaSegundos (double tiempo){
         double res = tiempo * constanteSegundosD;   
         return res; 
     }
-    public static double KmporhoraMporsegundo(double velocidad){
+    public final static double KmporhoraMporsegundo(double velocidad){
         double res = velocidad * MPH; 
         return res; 
     }
-    public static double MPHaKMH (double velocidad){
+    public final static double MPHaKMH (double velocidad){
         double res = velocidad * KMH; 
         return res; 
     }
-    public static double Aceleracion (double g){
+    public final static double Aceleracion (double g){
         double res = g*gravedad; 
         return res; 
     }
-    public static double LibrasFuerzaNewtons (double libras){
+    public final static double LibrasFuerzaNewtons (double libras){
         double res = libras*N; 
         return res; 
     }
-    public static double CalJul (double cal){
+    public final static double CalJul (double cal){
         double res = cal*Jul;  
         return res; 
     }
-    public static double eVJul (double eV){
+    public final static double eVJul (double eV){
         double res = eV*eVJ; 
         return res; 
     }
-    public static double hpVatio (double hp){
+    public final static double hpVatio (double hp){
         double res = hp*Vatio; 
         return res; 
     }
-    public static double atmPa (double atm){
+    public final static double atmPa (double atm){
         double res = atm*Pascalatm; 
         return res; 
     }
-    public static double barPa (double bar){
+    public final static double barPa (double bar){
         double res = bar*Pascalbar; 
         return res; 
     }
-    public static double MHzaHz (double MHz){
+    public final static double MHzaHz (double MHz){
         double res = MHz*MHzHz; 
         return res; 
     }
-    public static double RadGrados (double rad){
+    public final static double RadGrados (double rad){
         double res = rad*grados; 
         return res; 
     }
-    
-
-    
-    
+    public static final boolean soloContieneDígitos(String texto) {
+        if (texto == null || texto.isEmpty()) {
+            return false;
+        }
+        for (int i = 0; i < texto.length(); i++) {
+            if (!Character.isDigit(texto.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
