@@ -10,9 +10,11 @@ convertir unidades de masa, tiempo, velocidad, fuerza, energía, potencia,
 
 presión y frecuencia, así como utilidades para validación de texto.
 
+@author Caballero Silva Dalia Montserrat 
+
 @author Crespo Castañón Suyay Fernanda
 
-@author Caballero Silva Dalia Montserrat */ 
+*/ 
 public class Convertir {
 
 // Constantes public static final double constanteKilogramos = 1000; // Toneladas a kilogramos public static final double constanteKilogramosLibras = 0.453592; // Libras a kilogramos public static final double constanteOnzas = 28.3495; // Onzas a gramos public static final double constanteSegundosM = 60; // Segundos en un minuto public static final double constanteSegundosH = 3600; // Segundos en una hora public static final double constanteSegundosD = 86400; // Segundos en un día public static final double MPH = 0.2778; // Km/h a m/s public static final double KMH = 1.60934; // mph a km/h public static final double gravedad = 9.81; // Gravedad terrestre public static final double N = 4.44822; // Libras-fuerza a newtons public static final double Jul = 4.184; // Calorías a julios public static final double eVJ = 1.602e-19; // Electrón-voltios a julios public static final double Vatio = 746; // hp a vatios public static final double Pascalatm = 101325; // atm a pascales public static final double Pascalbar = 100000; // bar a pascales public static final double MHzHz = 1000000; // MHz a Hz public static final double grados = 180 / Math.PI; // Radianes a grados
